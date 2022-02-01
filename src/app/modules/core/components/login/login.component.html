@@ -1,0 +1,51 @@
+<div class="card-div">
+  <mat-card class="card">
+    <mat-card-title>Welcome</mat-card-title>
+    <mat-card-content>
+      <form class="example-form">
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Email</mat-label>
+          <input
+            type="email"
+            matInput
+            [formControl]="emailFormControl"
+            placeholder="pat@example.com"
+          />
+          <mat-error
+            *ngIf="
+              emailFormControl.hasError('email') &&
+              !emailFormControl.hasError('required')
+            "
+          >
+            Please enter a valid email address
+          </mat-error>
+          <mat-error *ngIf="emailFormControl.hasError('required')">
+            Email is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Password</mat-label>
+          <input type="password" matInput [formControl]="passwordFormControl" />
+          <mat-error *ngIf="!passwordFormControl.hasError('required')">
+            Please enter a valid password
+          </mat-error>
+          <mat-error *ngIf="passwordFormControl.hasError('required')">
+            Password is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+      </form>
+    </mat-card-content>
+    <mat-divider inset></mat-divider>
+    <mat-card-actions class="submit-action">
+      <button type="submit" mat-button>Login</button>
+    </mat-card-actions>
+    <mat-card-footer>
+      <mat-card-subtitle
+        >New to Pima?
+        <a href="#" class="create-account"
+          >Create your own Account</a
+        ></mat-card-subtitle
+      >
+    </mat-card-footer>
+  </mat-card>
+</div>

@@ -1,0 +1,41 @@
+/* main div */
+.card-div {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main card */
+.card {
+  max-width: 40%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+mat-card-title, mat-card-footer{
+  text-align: center;
+}
+
+/* login form */
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.submit-action {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.submit-action > button {
+  background-color: burlywood;
+}
+
+.create-account{
+  text-decoration: none;
+}
+

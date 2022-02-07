@@ -1,9 +1,9 @@
-<div class="card-div">
-  <mat-card class="card">
+<div class="login">
+  <mat-card class="login_card">
     <mat-card-title>Welcome</mat-card-title>
     <mat-card-content>
-      <form class="example-form">
-        <mat-form-field class="example-full-width" appearance="outline">
+      <form class="login_card_form">
+        <mat-form-field class="login_card_form_field" appearance="outline">
           <mat-label>Email</mat-label>
           <input
             type="email"
@@ -23,7 +23,7 @@
             Email is <strong>required</strong>
           </mat-error>
         </mat-form-field>
-        <mat-form-field class="example-full-width" appearance="outline">
+        <mat-form-field class="login_card_form_field" appearance="outline">
           <mat-label>Password</mat-label>
           <input type="password" matInput [formControl]="passwordFormControl" />
           <mat-error *ngIf="!passwordFormControl.hasError('required')">
@@ -36,7 +36,7 @@
       </form>
     </mat-card-content>
     <mat-divider inset></mat-divider>
-    <mat-card-actions class="submit-action">
+    <mat-card-actions class="login_card_action">
       <button type="submit" mat-button>Login</button>
     </mat-card-actions>
     <mat-card-footer>

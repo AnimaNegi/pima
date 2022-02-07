@@ -1,6 +1,7 @@
 /* ----------top-nav---------- */
 .nav {
   position: sticky;
+  top: 0;
   background-color: rgb(19, 25, 33);
   height: 54px;
   display: flex;
@@ -77,6 +78,7 @@ i{
 /* ----------second-nav---------- */
 .nav-2 {
   position: sticky;
+  top: 54px;
   background-color: #232f3e;
   height: 40px;
   display: flex;

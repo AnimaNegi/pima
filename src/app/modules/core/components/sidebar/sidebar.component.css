@@ -1,0 +1,17 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  background-color: #232f3e;
+  width: 5vw;
+  height: 100vh;
+  text-align: center;
+}
+.menu {
+  background: transparent;
+  color: white;
+  border: none;
+  width: 5vw;
+}
+i {
+  font-size: 16px;
+}

@@ -1,0 +1,15 @@
+.headFoot {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sidebarHome {
+  display: flex;
+  flex: 1;
+  margin-top: 54px;
+  background-color: gainsboro;
+}
+.home{
+  margin-left:5vw;
+}
